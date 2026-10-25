@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SistemaVendasTest {
 
-    // --- Singleton & Factory Method ---
+    // Singleton e Factory Method
 
     @Test
     void deveRetornarMesmaInstanciaSingleton() {
@@ -31,7 +31,7 @@ class SistemaVendasTest {
         }
     }
 
-    // --- Bridge ---
+    // Bridge
 
     @Test
     void deveEmitirCertificadoComFormatoPDF() {
@@ -55,7 +55,7 @@ class SistemaVendasTest {
         }
     }
 
-    // --- Template Method ---
+    // Template Method
 
     @Test
     void deveRetornarRelatorioFinalAprovado() {
@@ -73,7 +73,7 @@ class SistemaVendasTest {
         assertEquals("Aluno no curso Programacao: Reprovado", curso.getRelatorioFinal(6.9f));
     }
 
-    // --- Decorator ---
+    // Decorator
 
     @Test
     void deveCalcularPrecoCursoSemDecorator() {
@@ -92,7 +92,7 @@ class SistemaVendasTest {
         assertEquals(1300.0f, cursoComMentoria.getPreco());
     }
 
-    // --- State & Observer ---
+    // State & Observer
 
     @Test
     void devePagarPedidoENotificarCliente() {
@@ -154,7 +154,7 @@ class SistemaVendasTest {
         assertFalse(pedido.cancelar());
     }
 
-    // --- Chain of Responsibility ---
+    // Chain of Responsibility
 
     @Test
     void deveAprovarDescontoComVendedor() {
